@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head %} <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> {% endblock %}
+
+{% block title %}DAZAR COMICS{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Preservando e compartilhando cultura<br>Sem limites</h1>
+    <p>Scan e distribuição de HQs feito por quem cresceu online</p>
+    <a href="/catalogo">Veja nosso catálogo</a>
+
+    <img class="hero-img" src="{{ url_for('static', filename='img/dazarherocollage.svg') }}" alt="">
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1><a href="/">DAZAR COMICS</a></h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/catalogo">Catálogo</a>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <nav>
+            <a href="#">Sobre o projeto</a>
+            <a href="#">Quem somos nós</a>
+        </nav>
+    </footer>
+</body>
+</html>
