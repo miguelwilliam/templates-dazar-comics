@@ -19,6 +19,11 @@
     width: fit-content;
 }
 
+.hero h1, .hero p {
+    padding: 5px;
+    background-color: var(--cor-branco);
+}
+
 .hero h1 {
     font-family: "UnifrakturMaguntia", cursive;
 }
@@ -47,8 +52,10 @@
     
     position: absolute;
     top: 50%;
-    right: 0;
 
     z-index: -1;
     transform: translateY(-50%);
 }   
+.hero-img.right {
+    right: 0;
+}

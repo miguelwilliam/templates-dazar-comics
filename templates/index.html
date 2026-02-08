@@ -6,10 +6,10 @@
 
 {% block content %}
 <div class="hero">
-    <img class="hero-img" src="{{ url_for('static', filename='img/dazarherocollage.svg') }}" alt="">
+    <img class="hero-img right" src="{{ url_for('static', filename='img/dazarherocollage.svg') }}">
 
     <h1>Preservando e compartilhando cultura;<br>sem limites</h1>
     <p>Scan e distribuição de HQs feito por quem cresceu online</p>
-    <a href="/catalogo">Veja nosso catálogo</a>
+    <a href="{{ url_for('catalogo') }}">Veja nosso catálogo</a>
 </div>
 {% endblock %}
