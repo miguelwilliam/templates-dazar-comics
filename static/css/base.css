@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { /* VARIÁVEIS */
+    --cor-1: #1A1423;
+    --cor-2: #3D314A;
+    --cor-3: #684756;
+    --cor-branco: #F6F3F5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--cor-1);
+    background-color: var(--cor-branco);
+    font-family: 'Roboto';
+}
+
+.page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid var(--cor-1);
+    background-color: var(--cor-branco);
+    
+    flex: 0 0 auto;
+    display: flex;
+
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-family: 'Alegreya';
+    font-size: 30px;
+}
+
+header a {
+    color: var(--cor-1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    flex-shrink: 0;
+    height: 80px;
+    border-top: 1px solid var(--cor-1);
+    background-color: var(--cor-branco);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: var(--cor-1);
+}

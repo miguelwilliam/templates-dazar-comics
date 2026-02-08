@@ -1,20 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root { /* VARIÁVEIS */
-    --cor-1: #1A1423;
-    --cor-2: #3D314A;
-    --cor-3: #684756;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 .hero {
-    flex-grow: 1;
+    flex: 1;
+    position: relative;
+
+    color: var(--cor-1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+}
+
+.hero * {
+    width: fit-content;
+}
+
+.hero h1 {
+    font-family: "UnifrakturMaguntia", cursive;
+}
+
+.hero p {
+    color: var(--cor-2);
+    font-style: italic;
+}
+
+.hero a {
+    background-color: var(--cor-3);
+    color: var(--cor-branco);
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+    transition: .3s all;
+}
+
+.hero a:hover {
+    background-color: var(--cor-1);
 }
 
 .hero-img {
-    height: 700px;
-}
+    height: 600px;
+    
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    z-index: -1;
+    transform: translateY(-50%);
+}   

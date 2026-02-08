@@ -2,8 +2,10 @@
 
 {% block title %}Catálogo{% endblock %}
 
+{% block header %} <link rel="stylesheet" href="{{ url_for('static', filename='css/catalogo.css') }}"> {% endblock %}
+
 {% block content %}
-<div class="main">
+<div class="main-container">
     <h2>Catálogo</h2>
     <ul>
         <li><a href="">Livro 1</a></li>
@@ -16,4 +18,4 @@
         <li><a href="">livro 8</a></li>
     </ul>
 </div>
-{% endblock %}
+{% endblock %}      
